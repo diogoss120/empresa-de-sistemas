@@ -1,0 +1,536 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html, body{
+    height: 100%;
+}
+
+.clear{
+    clear: both;
+}
+
+.center{
+    width: 95%;
+    padding: 0 2%;
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+/* classes base acima*/
+
+header{
+    height: 90vh;
+    max-height: 1000px;
+    background-image: url('../imagens/capa.png');
+    background-size: cover;
+    background-position: center;
+    padding-top: 40px;
+}
+
+header .logo{
+    float: left;
+    /*width: 160px;
+    height: 30px;
+    background-image: url('../imagens/logo-danki.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;*/
+    position: relative;
+    top: -8px;
+}
+
+header .logo p{
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+
+.nav-desktop, .nav-phone{
+    float: right;
+}
+
+.nav-desktop li{
+    float: left;
+    margin: 0 20px;
+    list-style: none;
+}
+
+.nav-desktop a, .nav-phone a{
+    font-size: 15px;
+    font-weight: 400;
+    color: white;
+    text-decoration: none;
+}
+
+.menu-mobile{
+    display: none;
+    width: 60px;
+    height: 40px;
+    margin-left: 8px;
+    background-image: url('../imagens/cardapio.png');
+    background-size: contain;
+    background-position: 100% 100%;
+}
+
+/*
+.nav-phone:hover ul {
+    display: block;
+}
+*/
+.nav-phone li{
+    list-style: none;
+    padding: 10px;
+    background-color: rgba(71, 37, 98, 0.5);
+}
+
+.nav-phone li:hover {
+    background-color: rgba(71, 37, 98, 0.9);
+}
+
+.nav-phone ul{
+    display: none;
+    position: absolute;
+}
+
+.texto-header{
+    float: right;
+    width: 50%;
+    margin: 17% 10% 0 0;
+    color: white;
+}
+
+.texto-header h2{
+    font-size: 40px;
+    font-weight: 300;
+}
+
+.texto-header p{
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.section1{
+    background-color: #472562;
+    height: 400px;
+}
+
+.section1 > .center{
+    width: 1000px;
+    height: 100%;
+    padding-left: 7.5%;
+    padding-top: 3%;
+    position: relative;
+}
+
+.texto-section1{
+    color: white;
+}
+
+.texto-section1 h2{
+    font-weight: 300;
+    margin-bottom: 15px 0;
+    font-size: 30px;
+}
+
+.texto-section1 p{
+    margin: 13px 0;
+    font-weight: 300;
+}
+
+.texto-section1 ul{ 
+    padding-left: 19px;
+    list-style-position: outside;
+    margin: 13px 0;
+    font-weight: 300;
+}
+
+.texto-section1 button{
+    width: 150px;
+    height: 40px;
+    color: white;
+    background-color: #FF703D;
+    border-radius: 25px;
+    margin-top: 5px;
+    border: 0;
+    cursor: pointer;
+    outline: none;
+}
+
+.img-section {
+    width: 50%;
+    height: 414px;
+    background-image: url('../imagens/device.png');
+    background-size: cover;
+    background-position: 100% 100%;
+    position: absolute;
+    right: 15px;
+    top: -14px;
+}
+
+.section2{
+    height: 500px;
+}
+
+.texto-section2{
+    text-align: center;
+    padding-top: 30px;
+}
+
+.texto-section2 h2{
+    font-weight: 300;
+    font-size: 28px;
+    color: #472562;
+    margin-bottom: 15px ;
+}
+
+.texto-section2 p {
+    width: 70%;
+    margin: 0 auto;
+    font-weight: 300;
+}
+
+.section2 {
+    position: relative;
+}
+
+.img-section2{
+    width: 50%;
+    min-width: 900px;
+    height: 420px;
+    background-image: url('../imagens/mockup.jpg');
+    background-size: cover;
+    position: absolute;
+    bottom: -28%;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 1px 1px 10px grey;
+    z-index: 2;
+}
+
+.section3{
+    height: 420px;
+}
+
+.section3 .bloco{
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+.section3 .um{
+    background-color: #835FA7;
+    position: relative;
+    z-index: 1;
+}
+
+.um .texto{
+    width: 480px;
+    position: absolute;
+    bottom: 21%;
+    right: 2%;
+    color: white;
+}
+
+.um .texto h2{
+    font-weight: 300;
+    font-style: italic;
+}
+
+.um .texto p{
+    font-weight: 300;
+    margin-top: 10px;
+    line-height: 26px;
+    width: 90%;
+    max-width: 450px;
+}
+
+.section3 .dois{
+    position: relative;
+    z-index: 1;
+}
+
+.dois .texto{
+    width: 480px;
+    height: 160px;
+    position: absolute;
+    bottom: 13%;
+    left: 5%;
+}
+
+.dois .texto .info{
+    display: inline-block;
+    width: 150px;
+}
+.dois .texto .foto{
+    display: inline-block;
+    width: 50px;
+    height: 55px;
+    background-image: url('../imagens/Foto_Diogo.jpg');
+    background-size: 100% 100%;
+    background-position: center;
+    border-radius: 50px;
+}
+
+.dois .texto h2{
+    font-weight: 300;
+}
+
+.dois .texto .info p{
+    font-weight: 300;
+    font-size: 14px;
+    font-style: italic;
+    margin: 3px 0 8px 0;
+}
+
+.dois .texto > p{
+    line-height: 22px;
+    font-weight: 300;
+    width: 90%;
+    max-width: 450px;
+}
+
+/*section4...*/
+
+.section4{
+    background-color: #472563;
+    height: auto;
+    padding: 0 12%;
+}
+
+.section4 .parte1{
+    width: 50%;
+    float: left;
+    padding: 150px 0 50px 0;
+    color: white;
+}
+
+.section4 .parte1 h2{
+    font-weight: 300;
+}
+
+.section4 .parte1 p{
+    margin: 8px 0;
+    width: 90%;
+}
+
+.form{
+    width: 60%;
+    min-width: 360px;
+    margin: 0 auto;
+}
+
+.form input[type="text"], .form input[type="button"]{
+    display: block;
+    width: 94%;
+    height: 45px;
+    line-height: 45px;
+    padding-left: 8px;
+    margin-bottom: 8px;
+    outline: none;
+    outline-Color: red;
+    outline-Width: 1px;
+}
+
+.form input[type="button"]{
+    width: 180px;
+    height: 50px;
+    color: white;
+    border-radius: 30px;
+    background-color: #FF703D;
+    border: 0;
+    margin-top: 4px;
+    cursor: pointer;
+    outline: none;
+}
+
+.form textarea{
+    width: 94%;
+    padding-left: 8px;
+    padding-top: 8px;
+    resize: none;
+    outline: none;
+    outline-Color: red;
+    outline-Width: 1px;
+}
+
+.section4 .parte2{
+    width: 50%;
+    float: left;
+    padding: 160px 0 0 10px ;
+    height: auto;
+    
+}
+
+.parte2 .box{
+    margin: 0 auto;
+    max-width: 400px;
+    box-shadow: 1px 1px 1px white;
+}
+
+.parte2 .box .map{
+    padding-top: 100%;
+    background-color: white;
+}
+
+
+/*footer ...*/
+
+footer{
+    background: #192123;
+    color: white;
+    height: 120px;
+    padding: 50px;
+}
+
+footer p:nth-of-type(1){
+    float: left;
+    margin-bottom: 8px;
+}
+
+footer p:nth-of-type(2){
+    float: right;
+}
+
+@media (max-width: 1270px){
+    .section4{
+        padding: 0 5%;
+    }
+}
+
+@media (max-width: 1045px){
+    .img-section{
+        display: none;
+    }
+
+    .section1 {
+        height: 350px;
+    }
+
+    .section1 > .center{
+        width: 100%;
+        height: auto;
+        padding: 0;
+        position: static;
+    }
+
+    .texto-section1{
+        height: 280px;
+        width: 65%;
+        margin: 0 auto;
+        padding-top: 5%;
+    }
+
+    .img-section2{
+        min-width: auto;
+        width: 90%;
+        height: 360px;
+        bottom: -28%;
+    }
+    
+    .section3{
+        height: auto;/*estava dand oum bug porque a altura da 
+                        sectio3 estava fix ATENÇÃO a alturas fixas*/
+    }
+
+    .section3 .bloco{
+        width: 100%;
+        height: 300px;
+        float: none;
+        display: block;
+        position: static;
+    }
+    
+    .um{
+        padding-top: 180px;
+    }
+    .um .texto{
+        width: 92%;
+        max-width: 850px;
+        position: static;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .um .texto p{
+        margin: 0 auto;
+        width: 90%;
+        float: none;
+    }
+
+
+    .dois{
+        height: 220px !important;
+        padding-top: 60px;
+        display: block;
+    }
+
+    .dois .texto{
+        position: static;/*esse bloco tinha um position relative por isso deu trabalho*/
+        width: 90%;
+        max-width: 850px;
+        height: auto;
+        margin: 0 auto;
+        text-align: center;
+    } 
+    .dois .texto > p{
+        min-width: none;
+        width: 90%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+}
+
+@media (max-width: 900px){
+    .section4 .parte1, .section4 .parte2{
+        float: none;
+        width: 100%;
+        padding: 60px 0;
+    } 
+    .parte1 .box{
+        width: 450px;
+    }
+    .section4 .parte2{
+        border-top: 2px solid rgba(100,100,100,0.5);
+    }
+}
+@media (max-width: 700px){
+    footer .center p{
+        float: none;
+        display: inline-block;
+    }
+    footer .center{
+        text-align: center;
+    }
+}
+@media (max-width: 640px){
+    .texto-header{
+        float: left;
+        margin: 25% 0 0 10%;
+        width: 75%;
+    }
+
+    .nav-desktop{
+        display: none;
+    }
+
+    .nav-phone, .menu-mobile{
+        display: block;
+    }
+    .texto-section2 p {
+        width: 90%;
+    }
+    .img-section2{
+        height: 350px;
+        bottom: -28%;
+    }
+    .texto-section2 p {
+        width: 100%;
+    }
+    footer{
+        padding: 40px 0;
+    }
+}
